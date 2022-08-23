@@ -3,10 +3,12 @@ using namespace std;
 long add(long, long);
 long add(long,long,long);
 float add(float, float);
+int add(int , int);
 int main()
 {
  long a, b, c,d;
  float e, f, g;
+int h;
  cout << "Enter three integers\n";
 cin >> a >> b>>c;
 d=add(a,b,c);
@@ -19,6 +21,9 @@ cout << "Enter two floating point numbers\n";
  cin >> e >> f;
  g = add(e, f);
 cout << "Sum of floats: " << g << endl;
+
+h = add(1 , 2);
+cout << "Sum of int : " << h << endl;
 }
 long add(long c, long g)
 {
@@ -37,4 +42,10 @@ long add(long c, long g,long h)
  long sum;
  sum = c + g+h;
  return sum;
+}
+int add(int p , int q)
+{
+int sum;
+sum = p+q;
+return sum;
 }
